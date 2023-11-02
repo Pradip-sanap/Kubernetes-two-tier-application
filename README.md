@@ -5,22 +5,22 @@ Manifest files are create for deployment.
 We use minikube to deploy application.
 
 Commands for deployment:
-kubectl apply -f mongo-app.yaml
+1. kubectl apply -f mongo-app.yaml
 
-kubectl apply -f mongo-config.yaml
+2. kubectl apply -f mongo-config.yaml
 
-kubectl apply -f secret.yaml
+3. kubectl apply -f secret.yaml
 
-kubectl apply -f .\web-app.yaml 
+4. kubectl apply -f .\web-app.yaml 
 
-## check 
+### check 
 kubectl get pods 
 kubectl get svc
 kubectl get all
 
-## We had create service for both webapp and database. We need to expose service to outer world. In minikube, it done using command.
-minikube service webapp-service
+We had create service for both webapp and database. We need to expose service to outer world. In minikube, it done using command.
+### minikube service webapp-service
 
-## Default username and password for alert box is "admin" and "pass" respectively. It is by default for mongo-express.
+Default username and password for alert box is "admin" and "pass" respectively. It is by default for mongo-express.
 
 Mongo-Express: It is UI given for user to easily add, delete and manipulate databases in mongoDb.
