@@ -11,7 +11,7 @@ Commands for deployment:
 
 3. kubectl apply -f secret.yaml
 
-4. kubectl apply -f .\web-app.yaml 
+4. kubectl apply -f web-app.yaml 
 
 ### check 
 kubectl get pods 
